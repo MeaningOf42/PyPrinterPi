@@ -55,7 +55,7 @@ PiPrintLib.printer_print("a power of ten.")
 
 while True: #This loop waits for the user to the number of digits of pi they want to print out.
     #this block of code asks the user what they want to do
-    PiPrintLib.printer_print("This program"
+    PiPrintLib.printer_print("This program")
     PiPrintLib.printer_print("is currently set")
     PiPrintLib.printer_print("to print 10^" + str(decimal_power_of_ten) + "digits of pi")
                              
