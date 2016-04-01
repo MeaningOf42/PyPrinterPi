@@ -13,6 +13,9 @@ button3_name = "#"
 
 #
 PiPrintLib.printer_print("Do you want to cheat and use values from pi_cheat.txt?")
+time.sleep(0.2)
 PiPrintLib.printer_print("If you cheat you won't calculate pi, just print it")
+time.sleep(0.2)
 PiPrintLib.printer_print("If you want to cheat press " + button1_name)
+time.sleep(0.2)
 PiPrintLib.printer_print("If you want to calculate press " + button2_name)
