@@ -8,8 +8,6 @@ printer.setDefault() # Make sure printer is set to default settings.
 
 printer.println("Testing...")
 printer.println("")
-printer.println("k")
-printer.println("")
 printer.println("")
 printer.println("This may not appear")
 printer.println("The final version should look something like this: ")
