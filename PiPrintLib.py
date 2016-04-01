@@ -31,7 +31,7 @@ def arctan(x):
         numurator_num += 2
     return Decimal(Decimal(total)/Decimal(one))
 
-def printerprint(string): #this function saves a string to a text file then uses a python 2 program to print it
+def printer_print(string): #this function saves a string to a text file then uses a python 2 program to print it
     f = open('passtopython2.txt', 'w') #this block saves our value of pi to pi.txt
     f.write(string)
     f.close()
@@ -42,7 +42,7 @@ def pi_cheat(decimals): #this function is used to change pi.txt to a value of pi
     f = open('pi_cheat.txt', 'r') #This block opens pi.txt and saves its contents as a string
     pi_cheat = f.read()
     f.close()
-    if decimals>pi_cheat.len():
+    if decimals>len(pi_cheat):
         p = open('pi.txt', 'w') #this block saves our value of pi to pi.txt
         p.write(str(pi_cheat))
         p.close()
