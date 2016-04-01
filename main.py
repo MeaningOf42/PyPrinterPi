@@ -96,7 +96,7 @@ start_time = time.time()
 if cheat:
     PiPrintLib.pi_cheat(10**decimal_power_of_ten)
 else:
-    gauss_pi_method(10**decimal_power_of_ten)
+    PiPrintLib.gauss_pi_method(10**decimal_power_of_ten)
 
 end_time = time.time()
 
