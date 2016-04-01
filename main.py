@@ -54,7 +54,7 @@ PiPrintLib.printer_print("You can only chose a power of ten.")
 while True: #This loop waits for the user to the number of digits of pi they want to print out.
     #this block of code asks the user what they want to do
     PiPrintLib.printer_print("This program is currently set")
-    PiPrintLib.printer_print("to print 10^" + decimal_power_of_ten + "digits of pi")
+    PiPrintLib.printer_print("to print 10^" + str(decimal_power_of_ten) + "digits of pi")
     PiPrintLib.printer_print("To increase the power by 1:")
     PiPrintLib.printer_print("Press " + button3_name)
     PiPrintLib.printer_print("")
@@ -84,7 +84,7 @@ while True: #This loop waits for the user to the number of digits of pi they wan
 start_time = time.time()
 
 if cheat:
-    PiPrintLib.pi_cheat(10**decimal_power_of_ten)
+    PiPrintLib.pi_cheat(str(10**decimal_power_of_ten))
 else:
     gauss_pi_method(10**decimal_power_of_ten)
 
@@ -93,6 +93,6 @@ end_time = time.time()
 PiPrintLib.printer_print("Pi was just calculated in:")
 PiPrintLib.printer_print("%s seconds" % (time.time() - start_time))
 PiPrintLib.printer_print("")
-PiPrintLib.printer_print("Pi to " + 10**decimal_power_of_ten + "decimal places is")
+PiPrintLib.printer_print("Pi to " + str(10**decimal_power_of_ten) + "decimal places is")
 PiPrintLib.printpi()
 
