@@ -6,7 +6,7 @@ import PiPrintLib
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(23,GPIO.IN)
 GPIO.setup(24,GPIO.IN)
-GPIO.setup(23,GPIO.IN)
+GPIO.setup(25,GPIO.IN)
 
 #set up names for buttons, used for talking to user
 button1_name = "*"
@@ -47,18 +47,24 @@ PiPrintLib.printer_print("")
 decimal_power_of_ten = 4 #a value for how many places of pi the user wants printing
 
 PiPrintLib.printer_print("You will now select")
-PiPrintLib.printer_print("how many places of pi you want printed.")
-PiPrintLib.printer_print("You can only chose a power of ten.")
+PiPrintLib.printer_print("how many places of pi")
+PiPrintLib.printer_print("you want printed.")
+PiPrintLib.printer_print("You can only chose")
+PiPrintLib.printer_print("a power of ten.")
 
 
 while True: #This loop waits for the user to the number of digits of pi they want to print out.
     #this block of code asks the user what they want to do
-    PiPrintLib.printer_print("This program is currently set")
+    PiPrintLib.printer_print("This program"
+    PiPrintLib.printer_print("is currently set")
     PiPrintLib.printer_print("to print 10^" + str(decimal_power_of_ten) + "digits of pi")
-    PiPrintLib.printer_print("To increase the power by 1:")
+                             
+    PiPrintLib.printer_print("To increase")
+    PiPrintLib.printer_print("the power by 1:")
     PiPrintLib.printer_print("Press " + button3_name)
     PiPrintLib.printer_print("")
-    PiPrintLib.printer_print("To decrease the power by 1:")
+    PiPrintLib.printer_print("To decrease")
+    PiPrintLib.printer_print("the power by 1:")
     PiPrintLib.printer_print("Press " + button1_name)
     PiPrintLib.printer_print("")
     PiPrintLib.printer_print("To run the program:")
@@ -67,7 +73,7 @@ while True: #This loop waits for the user to the number of digits of pi they wan
     PiPrintLib.printer_print("")
     
     if (GPIO.input(23)):
-        decimal_power_of_ten -=1
+        decimal_power_of_ten -= 1
         if decimal_power_of_ten<1:
             PiPrintLib.printer_print("You can't go that low.")
             decimal_power_of_ten = 1
