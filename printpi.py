@@ -23,7 +23,7 @@ for i in pi:
         pi_formatted += "\n     " + i
         
     elif count == ((2*pi_leg_length) + 32):
-        pi_formatted += "\n \ n \n" + i
+        pi_formatted += "\n \n \n" + i
         count = 1
         
     else:
@@ -32,7 +32,11 @@ for i in pi:
 
     count += 1
 
-pi_line_split = pi_formatted.spli("\n")
+pi_line_split = pi_formatted.split("\n")
 
+printer = Adafruit_Thermal("/dev/ttyAMA0", 19200, timeout=5)
+
+printer.println("pi =")
+printer.println("3.14159265358979323846264338327")
 for i in pi_line_split:
     printer.println(i)
