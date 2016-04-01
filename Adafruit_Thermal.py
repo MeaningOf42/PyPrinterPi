@@ -14,6 +14,8 @@
 # MIT license, all text above must be included in any redistribution.
 #*************************************************************************
 
+#This is an open source libary made by adafruit, I take no credit for their work. The original file is availible at https://github.com/adafruit/Python-Thermal-Printer/blob/master/Adafruit_Thermal.py
+
 # This is pretty much a 1:1 direct Python port of the Adafruit_Thermal
 # library for Arduino.  All methods use the same naming conventions as the
 # Arduino library, with only slight changes in parameter behavior where
@@ -50,7 +52,7 @@ class Adafruit_Thermal(Serial):
 	lineSpacing     =  8
 	barcodeHeight   = 50
 	printMode       =  0
-	defaultHeatTime = 60
+	defaultHeatTime = 120
 
 	def __init__(self, *args, **kwargs):
 		# If no parameters given, use default port & baud rate.
