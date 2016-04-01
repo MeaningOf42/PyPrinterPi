@@ -6,8 +6,8 @@ import time
 printer = Adafruit_Thermal("/dev/ttyAMA0", 19200, timeout=5)
 
 printer.println("Testing...")
-printer.println("If you're seeing this it works")
 time.sleep(0.1)
+printer.println("If you're seeing this it works")
 printer.println("")
 printer.println("the final version should look something like this: ")
 printer.println("the final version should look something like this: ")
