@@ -51,3 +51,6 @@ def pi_cheat(decimals): #this function is used to change pi.txt to a value of pi
         p.write(str(pi_cheat[:decimals]))
         p.close()
     return
+
+def printpi():
+    os.system("sudo python printpi.py")
