@@ -12,7 +12,7 @@ button2_name = "0"
 button3_name = "#"
 
 #
-PiPrintLib.printer_print("Do you want to cheat and use values from pi_cheat.txt?")
+PiPrintLib.printer_print("Do you want to cheat and use values from pi_cheat.txt?\n")
 PiPrintLib.printer_print("")
 time.sleep(0.2)
 PiPrintLib.printer_print("")
