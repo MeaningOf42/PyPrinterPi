@@ -8,6 +8,6 @@ string = f.read()
 f.close()
 
 printer = Adafruit_Thermal("/dev/ttyAMA0", 19200, timeout=5) #creates printer object
-
+printer.setDefault()
 printer.println(str(string))
 os.system("rm passtopython2.txt")
